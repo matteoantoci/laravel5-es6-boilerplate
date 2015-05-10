@@ -37,7 +37,7 @@ var config = {
         dest: paths.dist + 'css/'
     },
     browserSync: {
-        proxy: false
+        proxy: 'pocket.app'
     }
 };
 
