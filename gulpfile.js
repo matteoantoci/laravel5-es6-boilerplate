@@ -35,6 +35,9 @@ var config = {
     css: {
         src: paths.assets + 'scss/*.scss',
         dest: paths.dist + 'css/'
+    },
+    browserSync: {
+        proxy: false
     }
 };
 
@@ -107,11 +110,17 @@ gulp.task('webdriverStandalone', webdriverStandalone);
 
 // START WEB SERVER
 gulp.task('serve', function () {
-    bs.init({
-        server: {
+    var initOptions = {};
+
+    if (config.browserSync.proxy){
+        initOptions.proxy = config.browserSync.proxy;
+    } else {
+        initOptions.server = {
             baseDir: './'
-        }
-    });
+        };
+    }
+
+    bs.init(initOptions);
 });
 
 // Build files and exit
