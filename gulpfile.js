@@ -1,6 +1,5 @@
 'use strict';
 
-//var elixir = require('laravel-elixir');
 var gulp = require('gulp');
 var browserify = require('browserify');
 var watchify = require('watchify');
