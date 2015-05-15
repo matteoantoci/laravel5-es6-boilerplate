@@ -1,7 +1,8 @@
 ###Laravel 5 && ES6-stack boilerplate
 
-Run composer update on Homestead
+To init project run ./init.sh from Homestead project folder
 
+Run composer update on Homestead
 Run npm-install on host machine
 
 Run all gulp tasks in host machine (front-end stuff):
