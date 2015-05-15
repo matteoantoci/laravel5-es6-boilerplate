@@ -1,4 +1,6 @@
-Run composer update on guest machine
+###Laravel 5 && ES6-stack boilerplate
+
+Run composer update on Homestead
 
 Run npm-install on host machine
 
